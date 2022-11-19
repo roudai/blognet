@@ -25,8 +25,8 @@
       最初にエッジの向きを揃えます。持ち替えが全くなく、また最初の2層が終わった時点でエッジ向きが合っているのでCOLLとかZBLLとかがやりやすくなります。
     </p>
     <div class="column is-8 is-offset-2">
-      <blockquote class="twitter-tweet container">
-        <a href="https://twitter.com/roudainet/status/906882296422084613?ref_src=twsrc%5Etfw"></a>
+      <blockquote class="twitter-tweet">
+        <a href="https://twitter.com/roudainet/status/906881568806920192?ref_src=twsrc%5Etfw"></a>
       </blockquote>
     </div>
 
