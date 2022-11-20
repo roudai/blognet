@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>2016年にルービックキューブ公式大会で起きた懲罰・重大インシデントまとめ</h1>
+    <h1 class="title">2016年にルービックキューブ公式大会で起きた懲罰・重大インシデントまとめ</h1>
+    <p class="subtitle">記事投稿日 : 2016年12月5日<br />最終修正日 : 2022年11月21日</p>
     <p>
       ※この記事は、<a href="https://adventar.org/calendars/1361" target="_blank">Speedcubing Advent Calendar 2016</a
       >の企画として執筆したものです。

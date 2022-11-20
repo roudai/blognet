@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>ルービックキューブ世界記録4.90秒の凄さを一般人にも分かりやすく解説</h1>
+    <h1 class="title">ルービックキューブ世界記録4.90秒の凄さを一般人にも分かりやすく解説</h1>
+    <p class="subtitle">記事投稿日 : 2017年6月19日<br />最終修正日 : 2022年11月21日</p>
     <p>
       ※この記事は、<a href="https://adventar.org/calendars/823" target="_blank">Speedcubing Advent Calendar 2015</a
       >の企画として執筆したものです。
@@ -12,7 +13,7 @@
     <p>
       <a href="https://japan.techinsight.jp/2015/11/post-161152.html" target="_blank"
         >ルービックキューブ世界記録更新！4.90秒の神業</a
-      >
+      ><br />
       <a href="https://gigazine.net/news/20151125-rubik-cube-world-record/" target="_blank"
         >わずか14歳の少年がルービックキューブの世界記録更新、5秒を切る神業を披露</a
       >
