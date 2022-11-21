@@ -46,23 +46,22 @@
     <p>の頭文字からとっており、この4ステップをすることで、ルービックキューブを効率よく揃えることができます。</p>
     <p>あまり詳しくは説明しませんが、</p>
     <h5>1. クロスを揃えて(Cross)</h5>
-
-    <figure class="image" style="width: 100px; height: 100px">
-      <img src="@/assets/37/cross.webp" />
-    </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/cross.webp" width="80px" />
+    </div>
 
     <h5>2. 下の2層を揃えて（First 2 Layer : F2L）</h5>
-    <figure class="image" style="width: 400px; height: 100px">
-      <img src="@/assets/37/f2l.webp" />
-    </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/f2l.webp" width="320px" />
+    </div>
     <h5>3. 最後の層の向きを揃えて（Orientatioin of the Last Layer : OLL）</h5>
-    <figure class="image" style="width: 200px; height: 100px">
-      <img src="@/assets/37/oll.webp" />
-    </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/oll.webp" width="160px" />
+    </div>
     <h5>4. 最後の層の場所を揃える（Permutation of the Last Layer : PLL）</h5>
-    <figure class="image" style="width: 200px; height: 100px">
-      <img src="@/assets/37/pll.webp" />
-    </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/pll.webp" width="160px" />
+    </div>
     <p>この4ステップで、ルービックキューブが完成します。</p>
 
     <h3>Cross</h3>
@@ -89,9 +88,9 @@
     <p>
       参考 : Cube Voyage
       <a href="https://cubevoyage.net/how-to-solve/advanced/oll-algorithm/" target="_blank">OLL基本57手順</a> 一覧表より
-      <figure class="image" style="width: 580px; height: 379px">
+      <div class="columns ml-0 mr-0">
         <img src="@/assets/37/oll-580x379.webp" />
-      </figure>
+      </div>
     </p>
     <p>
       これをすべて覚えて、瞬時にどのパターンか判断し、手順を回すというのは、なかなか大変です。しかし、ルービックキューブを競技として本気でやるのであれば、いずれ通らなければならない道です。
@@ -102,9 +101,9 @@
     <p>
       参考 : roudai.net
       <a href="https://roudai.net/pll/pll-view/" target="_blank">PLL一覧</a> より
-      <figure class="image" style="width: 326px; height: 580px">
+      <div class="columns ml-0 mr-0">
         <img src="@/assets/37/pll-326x580.webp" />
-      </figure>
+      </div>
     </p>
     <p>
       OLLより少ないですが、その分OLLよりもひとつひとつの手順の手数（回す数）が多くなるため、これをすべて覚えるのもOLLと同じくらい大変です。
@@ -123,7 +122,7 @@
 
       解法<br />
       z2 // インスペクション<br />
-      D' L' R' F R D2′ // クロス<br />
+      D' L' R' F R D2' // クロス<br />
       U2 L' U' L // 1stペア<br />
       U' U' U' F' U' F U R U' R' // 2ndペア<br />
       y R U R' // 3rdペア<br />
@@ -211,13 +210,13 @@
       OLLは全部で57パターンあると紹介しましたが、OLLCPはこのOLLをさらに細分化して、全部で<b>331</b>パターンあります。
     </p>
     <p>例えば、</p>
-    <figure class="image" style="width: 100px; height: 100px">
-      <img src="@/assets/37/OLL16.webp" />
-    </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/OLL16.webp" width="80px" />
+    </div>
     <p>このようなパターンのOLLがあるのですが、これがOLLCPになると</p>
-    <figure class="image" style="width: 300px; height: 200px">
-      <img src="@/assets/37/ollcp.webp" />
-    </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/ollcp.webp" width="240px" />
+    </div>
     <p>さらに6つに細分化されます。向きだけではなく、コーナーの色まで見て判断する必要があります。</p>
     <p>
       見ての通り、OLLCPの判断はとても難しく、また300以上というパターン数は、想像を絶する数です。
@@ -250,20 +249,17 @@
     </p>
     <p>しかし、二つの動画を見比べてみると、一点決定的な違いがあります。それが何か分かりますか？</p>
     <p>それは、それぞれがキューブが完成した瞬間を見ることで、分かります。</p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image" style="width: 486px; height: 302px">
-        <img src="@/assets/37/collin.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/collin.webp" />
     </div>
+
     <p>
       Collinの動画では、OLLが終わった瞬間からタイマーを止める（手元のタイマーに手を置く）までに、一瞬の間があります。
       上の画像を見ると、キューブが完成した瞬間では4.8秒台を示しています。つまり、キューブが完成してから、PLLスキップが起きたことを確認し、
       タイマーを止めるまでに、<b>約0.3秒</b>のタイムラグがあります。これが、通常のPLLスキップが偶然起きたときの動きです。
     </p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image" style="width: 422px; height: 284px">
-        <img src="@/assets/37/lucas.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/37/lucas.webp" />
     </div>
     <p>
       それが、Lucasのほうを見てみると、キューブが完成した瞬間にはすでにキューブから手を離し、手元のタイマーを止めにいっています。
@@ -347,3 +343,9 @@
     </p>
   </div>
 </template>
+
+<style scoped>
+img {
+  max-width: 100%;
+}
+</style>
