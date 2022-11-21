@@ -16,9 +16,7 @@
     <p>
       そして重大な内容についてはWCA
       Organisationのフォーラムで報告がされるため、一般の会員もその内容を知ることができます。<br />
-      <a href="https://www.worldcubeassociation.org/archive/forums/9" target="_blank"
-        >https://www.worldcubeassociation.org/archive/forums/9</a
-      >
+      <a href="https://www.worldcubeassociation.org/archive/forums/9" target="_blank">WCA Organisation</a>
     </p>
     <p>
       この記事では、2016年にWCA Organisationフォーラムで報告された懲罰・重大インシデントについてまとめたいと思います。
@@ -110,9 +108,7 @@
       2016にて、ある競技者がスクランブラをしている際に、意図的にスクランブルを簡単なものにしていたという事案がありました。
     </p>
     <p>その一例が、元世界記録保持者のCollin Burnsが行ったこの試技です。</p>
-    <p>
-      <youtube-card id="m_NsanT6WsU"></youtube-card>
-    </p>
+    <youtube-card id="m_NsanT6WsU"></youtube-card>
     <p>
       5.21秒というかつて持っていた世界記録を超える記録ですが、解析をすると、2手でF2L 2つ目まで、5手でF2L
       3つ目まで終わるという、とんでもないスクランブルであることが分かります。

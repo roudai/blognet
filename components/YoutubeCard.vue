@@ -1,7 +1,5 @@
 <template>
-  <div class="column is-8 is-offset-2">
-    <youtube :video-id="id" class="youtube"></youtube>
-  </div>
+  <youtube ref="youtube" :video-id="id"></youtube>
 </template>
 
 <script>
@@ -16,9 +14,11 @@ export default {
 </script>
 
 <style>
-.youtube {
+iframe {
+  aspect-ratio: 16 / 9;
   width: 100%;
-  max-width: 640px;
-  margin: 1rem;
+  height: 100%;
+  max-width: 720px;
+  text-align: center;
 }
 </style>
