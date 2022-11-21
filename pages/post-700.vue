@@ -6,10 +6,8 @@
       2019年になり、立体パズル専門店triboxで新年の福袋（1万円）を購入したのですが、そ
       の中に、こんなルービックキューブが入ってました。
     </p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-1.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-1.webp" class="column is-8 is-offset-2" />
     </div>
     <p>
       なんだかとっても冬っぽいパッケージ。中国製です。このパズル、下記が販売ページなのですが、販売価格がなんと6900円。
@@ -28,10 +26,8 @@
     <h2>このルービックキューブでできること</h2>
     <p>まず最初に、このルービックキューブは普通に売っているものや初心者向けのものと何が違うのか、その概要です。</p>
     <p>このキューブには、下の写真のような付属品がついています。</p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-2.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-2.webp" class="column is-8 is-offset-2" />
     </div>
     <p>これらを使ってできることは、</p>
     <ol>
@@ -46,22 +42,16 @@
       ルービックキューブに磁力と言われてもなんのことかさっぱりかと思いますが、最近の競技用ルービックキューブでは、
       動きの補助として中に磁石が仕込まれています。これによって、回しすぎの防止や、動きが安定したりします。
     </p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-3.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-3.webp" class="column is-8 is-offset-2" />
     </div>
     <p>キューブの一部をとり外した状態です。取り外した部分が、磁石によってくっついています。</p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-4.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-4.webp" class="column is-8 is-offset-2" />
     </div>
     <p>横から見るとこんな感じ。丸いのが磁石です。</p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-5.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-5.webp" class="column is-8 is-offset-2" />
     </div>
     <p>
       この磁石の部分に、写真のように棒を差し込むことで、ロケット鉛筆のような要領で部品を入れ替えることができます
@@ -72,18 +62,14 @@
     <p>昔は自分で接着剤で磁石をつけたりしていたのですが、誰でも簡単に磁石の入れ替えができるようになっています。</p>
     <h2>バネの強さの調整</h2>
     <p>次に、バネの強さの調整です。ルービックキューブは、各面の真ん中がバネで固定されています。</p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-6.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-6.webp" class="column is-8 is-offset-2" />
     </div>
     <p>
       このバネが、元から入ってるものを含め4色用意されています。これは色によってそれぞれバネの強さ（反発力）が違います。
     </p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-7.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-7.webp" class="column is-8 is-offset-2" />
     </div>
     <p>
       バネの強さによってルービックキューブの回し心地、回すときの硬さが変わるため、好みによって調整することができます。
@@ -95,10 +81,8 @@
       先ほどの写真のセンター部分をよく見てみると、数字（0.6、0.8、1.0）が書かれています。
       これはその締め付け具合を数値化していて、それぞれの数字のところに引っ掛けることで、それを調整することができます。
     </p>
-    <div class="column is-8 is-offset-2">
-      <figure class="image">
-        <img src="@/assets/700/700-8.webp" />
-      </figure>
+    <div class="columns ml-0 mr-0">
+      <img src="@/assets/700/700-8.webp" class="column is-8 is-offset-2" />
     </div>
     <p>
       バネの締め付けといったら、普通はプラスドライバーでネジを締めたりしますよね。
@@ -124,10 +108,3 @@
     </p>
   </div>
 </template>
-
-<style>
-figure {
-  width: 580px;
-  height: 435px;
-}
-</style>
