@@ -344,6 +344,25 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      script: [
+        {
+          type: 'text/javascript',
+          async: true,
+          src: 'https://platform.twitter.com/widgets.js',
+        },
+      ],
+    }
+  },
+  mounted() {
+    window.twttr.widgets.load()
+  },
+}
+</script>
+
 <style scoped>
 img {
   max-width: 100%;
