@@ -113,7 +113,7 @@
 
 ## 現行の表記から直した箇所
 
-Constitution の原則 IV の例外(明らかな誤字・誤記)に基づいて直した箇所。理由に「候補」とあるものは、直しておらず、運営者の判断を待つ。
+Constitution の原則 IV の例外(明らかな誤字・誤記、または運営者の指示による古くなった情報の更新)に基づいて直した箇所。理由に「候補」とあるものは、直しておらず、運営者の判断を待つ。
 
 | ページ | 箇所 | 現行の表記 | 修正後の表記 | 理由 |
 |--------|------|------------|--------------|------|
@@ -125,7 +125,7 @@ Constitution の原則 IV の例外(明らかな誤字・誤記)に基づいて�
 | `/post-386` | 「Mats Valkの代名詞」の参考リンク | `Speedcubing.com VLS`(リンク先は speedsolving.com) | (変更しない) | 候補: サイト名とリンク先の不一致 |
 | `/post-388` | 「Square-1試技中のインシデント」のリンク | `href="Square-1 Final at Fantastic Manhattan Competition 2016"` | (変更しない) | 候補: リンク先が URL になっていない(リンク切れ) |
 | `/post-388` | 「最少手数競技中の不正」のリンク | `Incident in 3x3x3 Fewest Moves at Great Indian Cubeathon 2016` | (変更しない) | 候補: 本文(Zonhoven Open 2016)とリンクの大会名の不一致 |
-| (全ページ) | ヘッダーとフッターの GitHub アイコン | `https://github.com/roudai/roudai.net`(404) | (変更しない) | 候補: リンク切れ(001 の research.md の 9) |
+| (全ページ) | ヘッダーとフッターの GitHub アイコン | `https://github.com/roudai/roudai.net`(404) | `https://github.com/roudai/blognet` | 古くなった情報の更新(運営者の指示、2026-11-22)。出典: `https://github.com/roudai/blognet`(2026-11-22 に存在を確認)。ページの外(ヘッダーとフッター)のため、パリティの確認の対象外 |
 
 ## Assumptions
 

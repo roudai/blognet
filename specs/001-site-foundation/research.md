@@ -66,7 +66,7 @@ blognet で変わる点と、最新版で変わった点だけを、spike(原則
 ## 9. ヘッダーとフッターの内容
 
 - **Decision**: 現行の `legacy/components/NavBar.vue` と `FooterBar.vue` の内容を再現する。
-  - ヘッダー: サイト名「ブログ版ろーだいねっと アーカイブ」(`/` へのリンク)、GitHub アイコン(白、`https://github.com/roudai/roudai.net`)。サイト名は、現行と同じく通常のリンク(`<a href="/">`)にする。
+  - ヘッダー: サイト名「ブログ版ろーだいねっと アーカイブ」(`/` へのリンク)、GitHub アイコン(白、現行は `https://github.com/roudai/roudai.net`。002 で運営者の指示により `https://github.com/roudai/blognet` へ更新)。サイト名は、現行と同じく通常のリンク(`<a href="/">`)にする。
   - フッター: 「© 2012-{年} roudai.net」と GitHub アイコン(黒、同じ URL)。年はビルド時の年で描画し、マウント後に現在の年へ更新する(roudai.net と同じ)。
 - **補足**: GitHub アイコンのリンク先 `https://github.com/roudai/roudai.net` は、2026-11-22 の確認で 404 を返す(リポジトリ名の変更による。転送されない)。原則 IV の例外(古くなった情報の更新)は、運営者の明示的な指示が必要なため、この Spec では変更せず、更新の候補として運営者に確認する。リンク先は `app/data/site.ts` の1か所にまとめ、更新時の変更を1行にする。
 - 現行の `NavBar.vue` にある `menuShow`(メニューの開閉)は、呼び出す要素がなく使われていないため、移植しない。
