@@ -23,7 +23,8 @@ pnpm dev          # 開発サーバー(http://localhost:3000)
 pnpm lint         # ESLint と Prettier の確認
 pnpm typecheck    # 型チェック
 pnpm generate     # 静的生成(出力は .output/public)
-pnpm verify       # 生成結果の検証(CNAME、ページ、広告の痕跡がないこと)
+pnpm verify       # 生成結果の検証(CNAME、ページ、画像、広告の痕跡がないこと)
+pnpm verify:parity  # 本番との本文の比較(ネットワークが必要。CI では実行しない)
 pnpm preview      # 生成結果の確認
 ```
 

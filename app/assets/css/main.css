@@ -199,3 +199,89 @@
     }
   }
 }
+
+/*
+ * 記事ページで使う Bulma 0.9 のクラス(specs/002-posts/research.md の 3)。
+ * 移植元のテンプレートのクラス名をそのまま使えるよう、実際に使われているものだけを、同じ値で再現する。
+ * ブレークポイント: mobile は 768px 以下、tablet は 769px 以上。
+ */
+@layer components {
+  .title {
+    color: var(--color-bulma-text-strong);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    word-break: break-word;
+  }
+
+  .subtitle {
+    color: var(--color-bulma-text);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    word-break: break-word;
+  }
+
+  .title:not(:last-child),
+  .subtitle:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .title + .subtitle {
+    margin-top: -1.25rem;
+  }
+
+  .columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+
+    &:last-child {
+      margin-bottom: -0.75rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: calc(1.5rem - 0.75rem);
+    }
+  }
+
+  @media screen and (min-width: 769px), print {
+    .columns:not(.is-desktop) {
+      display: flex;
+    }
+  }
+
+  .column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+  }
+
+  @media screen and (min-width: 769px), print {
+    .column {
+      &.is-8 {
+        flex: none;
+        width: 66.66667%;
+      }
+      &.is-offset-2 {
+        margin-left: 16.66667%;
+      }
+    }
+  }
+
+  .box {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow:
+      0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+      0 0px 0 1px rgba(10, 10, 10, 0.02);
+    color: var(--color-bulma-text);
+    display: block;
+    padding: 1.25rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
