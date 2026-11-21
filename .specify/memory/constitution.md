@@ -1,22 +1,22 @@
 <!--
 Sync Impact Report
-- Version change: template → 1.0.0
-- Basis: roudai.net Constitution 1.2.0 (sister project, same migration policy), adapted to blognet.
-- Modified principles: all placeholders replaced (I〜VIII)
-- Added sections: Technology & Delivery Constraints, Migration Workflow
+- Version change: 1.0.0 → 1.0.1
+- Modified: preamble only (legacy/ was deleted at cutover; the old source is referenced by the tag v1-nuxt2). Wording clarification, no principle change.
+- Previous change (1.0.0): created from roudai.net Constitution 1.2.0, adapted to blognet.
 - Removed sections: none
 - Templates requiring updates:
   - .specify/templates/plan-template.md ✅ no change (Constitution Check is generic)
   - .specify/templates/spec-template.md ✅ no change
   - .specify/templates/tasks-template.md ✅ no change
-  - README.md ⚠ pending (still the Nuxt 2 boilerplate; rewrite after cutover)
+  - README.md ✅ rewritten at cutover
 - Follow-up TODOs: none
 -->
 # blog.roudai.net Constitution
 
 blog.roudai.net(ブログ版ろーだいねっと)は、ルービックキューブに関する記事のアーカイブを載せた
 個人サイトで、GitHub Pages で公開している。この Constitution は、Nuxt 2 から最新の Nuxt への
-再構築を対象とする。Nuxt 2 のソースは、移植元の参照用として `legacy/` に保存している。
+再構築を対象とする。Nuxt 2 のソースは、移植元の参照用として `legacy/` に保存していたが、
+切り替え時に削除した(原則 VI)。現在は、タグ `v1-nuxt2` で参照できる。
 方針は、同じ運営者の roudai.net の再構築(Constitution 1.2.0)と同じにする。
 
 ## Core Principles
@@ -112,4 +112,4 @@ Vue 3 や SSG で動かない可能性のある外部ライブラリや埋め込
 準拠状況は、各 Plan の Constitution Check と、切り替え時のチェックリストで確認する。
 逸脱する場合は、Plan の複雑さの追跡(complexity tracking)に理由を記載しなければならない。
 
-**Version**: 1.0.0 | **Ratified**: 2026-11-22 | **Last Amended**: 2026-11-22
+**Version**: 1.0.1 | **Ratified**: 2026-11-22 | **Last Amended**: 2026-11-22
