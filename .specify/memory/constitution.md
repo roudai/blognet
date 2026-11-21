@@ -1,50 +1,115 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+- Version change: template → 1.0.0
+- Basis: roudai.net Constitution 1.2.0 (sister project, same migration policy), adapted to blognet.
+- Modified principles: all placeholders replaced (I〜VIII)
+- Added sections: Technology & Delivery Constraints, Migration Workflow
+- Removed sections: none
+- Templates requiring updates:
+  - .specify/templates/plan-template.md ✅ no change (Constitution Check is generic)
+  - .specify/templates/spec-template.md ✅ no change
+  - .specify/templates/tasks-template.md ✅ no change
+  - README.md ⚠ pending (still the Nuxt 2 boilerplate; rewrite after cutover)
+- Follow-up TODOs: none
+-->
+# blog.roudai.net Constitution
+
+blog.roudai.net(ブログ版ろーだいねっと)は、ルービックキューブに関する記事のアーカイブを載せた
+個人サイトで、GitHub Pages で公開している。この Constitution は、Nuxt 2 から最新の Nuxt への
+再構築を対象とする。Nuxt 2 のソースは、移植元の参照用として `legacy/` に保存している。
+方針は、同じ運営者の roudai.net の再構築(Constitution 1.2.0)と同じにする。
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. 最新の安定版 Nuxt、TypeScript、静的生成のみ
+サイトは最新の安定版 Nuxt と TypeScript で構築し、静的生成(SSG)のみで出力しなければならない
+(MUST)。出力は GitHub Pages から配信するため、サーバーランタイムは使ってはならない。
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. URL の互換性
+現行サイトが配信している全 URL は、移行後も同じパスで到達できなければならない(MUST)。
+切り替え前に新旧サイトのルート一覧を突き合わせ、404 を返すルートがあってはならない。
+ルートを削除・変更する場合は、リダイレクトと理由の記録が必要である。
+例外: `/ads.txt` は、原則 III により意図的に廃止するため、404 を許容する。
+理由: 検索順位と既存の外部リンクを維持するため。
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Web サイトに広告を含めない、配信用ファイルは CNAME
+サイトの表示には、Google 広告を一切含めてはならない(MUST NOT)。具体的には次のとおり。
+- Google AdSense のモジュール、スクリプト、広告枠を含めない。
+- `ads.txt` を、生成したサイトに含めない。
+- 広告表示を前提にしたレイアウトの余白や、広告用の meta タグを残さない。
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+`CNAME`(`blog.roudai.net`)は、生成したサイトのルートに必ず含めなければならない(MUST)。
+移植元は `legacy/static/CNAME`。欠けると独自ドメインが外れる。
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+理由: Web サイトの広告を廃止する要件のため。AdSense の管理画面などの外部設定は、
+リポジトリの外で別途対応する。
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### IV. 機能パリティを最優先
+最初の目標は、現行のページと挙動の再現である。対象ページのパリティを確認するまで、
+デザイン刷新や機能追加(記事の Markdown 化、OGP、サイトマップ、RSS など)に着手しては
+ならない(MUST NOT)。それらは、パリティ確認後に別の機能として Spec を作成する。
+広告の廃止(原則 III)は、パリティの対象外とする。
+例外: 表示名や本文の明らかな誤字・誤記は、移植時に直してよい。
+直した箇所は、該当する Spec に、現行の表記と修正後の表記を記録しなければならない(MUST)。
+URL のパスは、誤記に見えても原則 II に従い変更しない。
+例外: 古くなった情報(提供が終わった、または移転した外部リンクの先、埋め込みの参照先)は、
+運営者が明示的に指示した場合に限り、移植時に更新してよい。更新した箇所は、該当する Spec に、
+現行の内容、更新後の内容、新しい情報の出典(URL と確認日)を記録しなければならない(MUST)。
+この例外は、デザインの刷新や機能の追加には適用しない。
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### V. CI による品質ゲート
+Lint と TypeScript の型チェックを CI で実行し、`main` へのマージ前にパスしなければならない
+(MUST)。パッケージマネージャーとロックファイルは、それぞれ1つだけにする。
+現行の `yarn.lock` は引き継がない。
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### VI. `legacy/` は読み取り専用
+`legacy/` 配下のファイルを変更してはならない(MUST NOT)。移植のための参照にのみ使う。
+移行が完了して新サイトを公開したら、`legacy/` を削除しなければならない。
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### VII. 本番デプロイは `main` からのみ
+本番(GitHub Pages)へのデプロイは、`main` からのみ行わなければならない(MUST)。
+`main` へのマージがワークフローを起動するため、マージ前にワークフローを新サイト用に
+書き直す(Node と Actions を現行版にし、Pages デプロイ方式にする)。PR のビルド確認は、
+デプロイしてはならない。
+
+### VIII. 依存ライブラリは spike で検証
+Vue 3 や SSG で動かない可能性のある外部ライブラリや埋め込み(Buefy の代替、`vue-youtube` の
+代替となる YouTube の埋め込み、Twitter の `widgets.js`)は、Plan で採用する前に、小さな spike で
+検証しなければならない(MUST)。検証は、開発サーバーと `nuxt generate` の出力の両方で行う。
+検証に失敗した場合は、その結果と、代わりに選んだ手段を記録する。
+
+## Technology & Delivery Constraints
+
+- 配信: `nuxt generate` の出力を、GitHub Pages の `https://blog.roudai.net` で公開する。
+- 言語: TypeScript。Node と Nuxt のバージョンは、ロックファイルと CI で固定する。
+- コンテンツ: `legacy/assets/<記事番号>/` の記事画像は、旧サイトのビルドがハッシュを付けて
+  生成した URL(`/_nuxt/img/<名前>.<ハッシュ>.<拡張子>`)で配信されており、ビルドごとに変わる値の
+  ため、引き継ぎの対象外とする。同じファイル名のまま固定の URL
+  (`/images/<記事番号>/<名前>.<拡張子>`)で配信し、原則 II のルート比較でも、
+  ページのルートとは別に扱う。
+- テストは、各 Spec で求められた場合のみ作成する(任意)。ただし、原則 V の Lint と型チェックは
+  任意ではない。
+
+## Migration Workflow
+
+- 作業は `nuxt4-rebuild` ブランチで行う。再構築前の状態には、タグ `v1-nuxt2` を付けている。
+- 機能単位で移植する。順序は次のとおり。
+  基盤(レイアウト、ナビ、フッター、デプロイ) → 記事ページ(`post-*`)とトップページ → 公開。
+- `main` へマージする前に、次のチェックリストをすべて完了しなければならない(MUST)。
+  原則 II のルート比較、原則 III の `CNAME` の配置および Web 広告の不在、
+  原則 VII のワークフロー書き換え、`README.md` の更新、`legacy/` の削除。
+- Spec Kit が作成するドキュメントは、日本語で記載する(詳細は `CLAUDE.md` の言語ルール)。
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+この Constitution は、本プロジェクトにおける他の慣行よりも優先する。改訂は、このファイルを
+編集して行い、Sync Impact Report の更新、バージョンの更新、`.specify/templates/` との
+整合確認を伴わなければならない。
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+バージョニングはセマンティックバージョニングに従う。原則の削除・再定義は MAJOR、
+原則の追加や指針の大幅な拡充は MINOR、文言の明確化は PATCH とする。
+
+準拠状況は、各 Plan の Constitution Check と、切り替え時のチェックリストで確認する。
+逸脱する場合は、Plan の複雑さの追跡(complexity tracking)に理由を記載しなければならない。
+
+**Version**: 1.0.0 | **Ratified**: 2026-11-22 | **Last Amended**: 2026-11-22
