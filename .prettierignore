@@ -1,0 +1,10 @@
+legacy/
+.output/
+.nuxt/
+node_modules/
+pnpm-lock.yaml
+public/CNAME
+specs/
+.specify/
+.claude/
+CLAUDE.md
