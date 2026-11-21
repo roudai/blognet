@@ -122,7 +122,7 @@ Constitution の原則 IV の例外(明らかな誤字・誤記、または運�
 | `/post-388` | 「Square-1スクランブルに関するインシデント」の4段落目 | `Feliks Zemdengs` | `Feliks Zemdegs` | 人名の綴りの誤り(他の記事では `Zemdegs`) |
 | `/post-700` | 冒頭の段落 | `そ の中に` | `その中に` | ソースの改行で語が分かれ、空白が表示されている |
 | `/post-37` | 末尾の「2022年追記」 | `(杜宇生）` | (変更しない) | 候補: 全角と半角の括弧の混在 |
-| `/post-386` | 「Mats Valkの代名詞」の参考リンク | `Speedcubing.com VLS`(リンク先は speedsolving.com) | (変更しない) | 候補: サイト名とリンク先の不一致 |
+| `/post-386` | 「Mats Valkの代名詞」の参考リンク | `Speedcubing.com VLS` | `SpeedSolving.com VLS` | サイト名の誤記(リンク先は `https://www.speedsolving.com/wiki/index.php/VLS`。運営者の判断、2026-11-22)。リンク先は変えない |
 | `/post-388` | 「Square-1試技中のインシデント」のリンク | `Square-1 Final at Fantastic Manhattan Competition 2016`(`Square-1 Final at Fantastic Manhattan Competition 2016`) | `Square-1 Final at Fantastic Manhattan Competition 2016`(`https://www.worldcubeassociation.org/archive/forum_topics/2027`) | 古くなった情報の更新(運営者の指示、2026-11-22)。リンク先が URL になっておらずリンク切れだった。出典: WCA のアーカイブの同名の記事 `https://www.worldcubeassociation.org/archive/forum_topics/2027`(2026-11-22 に確認)。表示名は変えない |
 | `/post-388` | 「最少手数競技中の不正」の本文の1段落目 | `2016年3月5日～6日にベルギーで行われたZonhoven Open 2016にて、18歳未満` | `2016年1月8日～10日にインドで行われたGreat Indian Cubeathon 2016にて、18歳未満` | 誤った情報の更新(運営者の指示、2026-11-22)。リンク先の報告(`https://www.worldcubeassociation.org/archive/forum_topics/2009`)は Great Indian Cubeathon 2016 の件で、内容は本文と一致するが、本文の大会名と日付は同じ記事の別の件(Zonhoven Open 2016)のものだった。出典: 上記の報告と、WCA の大会情報(`https://www.worldcubeassociation.org/competitions/GIC2016`、2016-01-08〜10、New Delhi)。2026-11-22 に確認 |
 | (全ページ) | ヘッダーとフッターの GitHub アイコン | `https://github.com/roudai/roudai.net`(404) | `https://github.com/roudai/blognet` | 古くなった情報の更新(運営者の指示、2026-11-22)。出典: `https://github.com/roudai/blognet`(2026-11-22 に存在を確認)。ページの外(ヘッダーとフッター)のため、パリティの確認の対象外 |

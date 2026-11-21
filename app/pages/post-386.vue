@@ -1,5 +1,6 @@
 <!--
   移植元: legacy/pages/post-386.vue
+  明らかな誤記を直した(specs/002-posts/spec.md の「現行の表記から直した箇所」)
 -->
 <template>
   <div>
@@ -83,7 +84,7 @@
       になります。
     </p>
     <p>このVLSについて語るには、このテクニックが世界で広まるまでのちょっとした歴史をたどらないといけません。</p>
-    <p>参考：<a href="https://www.speedsolving.com/wiki/index.php/VLS" target="_blank">Speedcubing.com VLS</a></p>
+    <p>参考：<a href="https://www.speedsolving.com/wiki/index.php/VLS" target="_blank">SpeedSolving.com VLS</a></p>
     <p>VLSの元となったのは、2005年にLucas Winterが提案した<b>Winter Variation(WV)</b>というテクニックでした。</p>
     <p>
       Winter Variationの手順については、私が管理しているルービックキューブ情報サイト、roudai.netでも記載しています。
