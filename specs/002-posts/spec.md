@@ -123,7 +123,7 @@ Constitution の原則 IV の例外(明らかな誤字・誤記、または運�
 | `/post-700` | 冒頭の段落 | `そ の中に` | `その中に` | ソースの改行で語が分かれ、空白が表示されている |
 | `/post-37` | 末尾の「2022年追記」 | `(杜宇生）` | (変更しない) | 候補: 全角と半角の括弧の混在 |
 | `/post-386` | 「Mats Valkの代名詞」の参考リンク | `Speedcubing.com VLS`(リンク先は speedsolving.com) | (変更しない) | 候補: サイト名とリンク先の不一致 |
-| `/post-388` | 「Square-1試技中のインシデント」のリンク | `href="Square-1 Final at Fantastic Manhattan Competition 2016"` | (変更しない) | 候補: リンク先が URL になっていない(リンク切れ) |
+| `/post-388` | 「Square-1試技中のインシデント」のリンク | `Square-1 Final at Fantastic Manhattan Competition 2016`(`Square-1 Final at Fantastic Manhattan Competition 2016`) | `Square-1 Final at Fantastic Manhattan Competition 2016`(`https://www.worldcubeassociation.org/archive/forum_topics/2027`) | 古くなった情報の更新(運営者の指示、2026-11-22)。リンク先が URL になっておらずリンク切れだった。出典: WCA のアーカイブの同名の記事 `https://www.worldcubeassociation.org/archive/forum_topics/2027`(2026-11-22 に確認)。表示名は変えない |
 | `/post-388` | 「最少手数競技中の不正」のリンク | `Incident in 3x3x3 Fewest Moves at Great Indian Cubeathon 2016` | (変更しない) | 候補: 本文(Zonhoven Open 2016)とリンクの大会名の不一致 |
 | (全ページ) | ヘッダーとフッターの GitHub アイコン | `https://github.com/roudai/roudai.net`(404) | `https://github.com/roudai/blognet` | 古くなった情報の更新(運営者の指示、2026-11-22)。出典: `https://github.com/roudai/blognet`(2026-11-22 に存在を確認)。ページの外(ヘッダーとフッター)のため、パリティの確認の対象外 |
 

@@ -1,5 +1,6 @@
 <!--
   移植元: legacy/pages/post-388.vue
+  リンク先の1件は、運営者の指示で更新した
   明らかな誤字を直した(specs/002-posts/spec.md の「現行の表記から直した箇所」)
 -->
 <template>
@@ -159,7 +160,7 @@
 
     <h3>Square-1試技中のインシデント</h3>
     <p>
-      <a href="Square-1 Final at Fantastic Manhattan Competition 2016" target="_blank"
+      <a href="https://www.worldcubeassociation.org/archive/forum_topics/2027" target="_blank"
         >Square-1 Final at Fantastic Manhattan Competition 2016</a
       >
     </p>
