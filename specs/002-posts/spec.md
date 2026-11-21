@@ -113,7 +113,7 @@
 
 ## 現行の表記から直した箇所
 
-Constitution の原則 IV の例外(明らかな誤字・誤記、または運営者の指示による古くなった情報の更新)に基づいて直した箇所。理由に「候補」とあるものは、直しておらず、運営者の判断を待つ。
+Constitution の原則 IV の例外(明らかな誤字・誤記、または運営者の指示による古くなった情報の更新)に基づいて直した箇所。候補として記録したものは、2026-11-22 にすべて運営者の判断を得て直した(理由に「候補」とある行は、直しておらず、運営者の判断を待つもの)。
 
 | ページ | 箇所 | 現行の表記 | 修正後の表記 | 理由 |
 |--------|------|------------|--------------|------|
@@ -121,7 +121,7 @@ Constitution の原則 IV の例外(明らかな誤字・誤記、または運�
 | `/post-37` | 「Last Layerの最終形態 : 1LLL」の2段落目 | `それらを別のもとした場合` | `それらを別のものとした場合` | 脱字 |
 | `/post-388` | 「Square-1スクランブルに関するインシデント」の4段落目 | `Feliks Zemdengs` | `Feliks Zemdegs` | 人名の綴りの誤り(他の記事では `Zemdegs`) |
 | `/post-700` | 冒頭の段落 | `そ の中に` | `その中に` | ソースの改行で語が分かれ、空白が表示されている |
-| `/post-37` | 末尾の「2022年追記」 | `(杜宇生）` | (変更しない) | 候補: 全角と半角の括弧の混在 |
+| `/post-37` | 末尾の「2022年追記」 | `Yusheng Du (杜宇生）` | `Yusheng Du（杜宇生）` | 全角と半角の括弧の混在を、記事の他の箇所に合わせて全角にそろえた(運営者の判断、2026-11-22) |
 | `/post-386` | 「Mats Valkの代名詞」の参考リンク | `Speedcubing.com VLS` | `SpeedSolving.com VLS` | サイト名の誤記(リンク先は `https://www.speedsolving.com/wiki/index.php/VLS`。運営者の判断、2026-11-22)。リンク先は変えない |
 | `/post-388` | 「Square-1試技中のインシデント」のリンク | `Square-1 Final at Fantastic Manhattan Competition 2016`(`Square-1 Final at Fantastic Manhattan Competition 2016`) | `Square-1 Final at Fantastic Manhattan Competition 2016`(`https://www.worldcubeassociation.org/archive/forum_topics/2027`) | 古くなった情報の更新(運営者の指示、2026-11-22)。リンク先が URL になっておらずリンク切れだった。出典: WCA のアーカイブの同名の記事 `https://www.worldcubeassociation.org/archive/forum_topics/2027`(2026-11-22 に確認)。表示名は変えない |
 | `/post-388` | 「最少手数競技中の不正」の本文の1段落目 | `2016年3月5日～6日にベルギーで行われたZonhoven Open 2016にて、18歳未満` | `2016年1月8日～10日にインドで行われたGreat Indian Cubeathon 2016にて、18歳未満` | 誤った情報の更新(運営者の指示、2026-11-22)。リンク先の報告(`https://www.worldcubeassociation.org/archive/forum_topics/2009`)は Great Indian Cubeathon 2016 の件で、内容は本文と一致するが、本文の大会名と日付は同じ記事の別の件(Zonhoven Open 2016)のものだった。出典: 上記の報告と、WCA の大会情報(`https://www.worldcubeassociation.org/competitions/GIC2016`、2016-01-08〜10、New Delhi)。2026-11-22 に確認 |
